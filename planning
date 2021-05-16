@@ -1,0 +1,86 @@
+Planning
+
+Onderdeel/scherm/venster Programmeur Van Tot
+
+Maak een planning in het
+
+kwaliteitshandboek!  10.00 uur 10.30 uur
+
+Maak een erd
+
+Maak de database in
+
+mySQLworkbench!
+
+Maak een creatiescript
+
+(export naar XAMPP)
+
+Import het creatiescript in
+
+PHPmyAdmin
+
+Vullen van de database met
+
+testgegevens!
+
+Controleer of de database
+
+goed werkt
+
+Maak de directorystructuur
+
+(mappenstructuur)
+
+Maken menu voor de
+
+website.
+
+Maken van het programma
+
+(CRUD)!
+
+Maken testplan!
+
+Programma aanpassen
+
+(verbeteren)!
+
+Verbeteringen invullen in
+
+het kwaliteitshandboek
+
+Testlog opleveren
+
+(testrapport)
+
+
+Realisatie
+
+Onderdeel/scherm/venster Programmeur Klaar op Opmerking
+
+Maak een ERD  13/01/2021 9.00 uur
+
+Maak de database in
+
+mySQLworkbench 13/01/2021 9.15 uur
+
+Creatiescript
+
+… (elk onderdeel uit de
+
+planning)
+
+Het toevoegen van een
+
+woning aan de database
+
+(create woning)
+
+Het tonen overzicht van de
+
+woningen (Read woning) 13/01/2021 9.30 uur De prijs staat er nog niet bij.
+
+Update huis
+
+Delete huis
