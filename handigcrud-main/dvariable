@@ -1,0 +1,19 @@
+<?php
+include '../config/dbconnect.php';
+$nme = $_POST [ 'nme'] ;
+$lnme = $_POST [ 'lnme'] ;
+$klantnummerid = $_POST [ 'klantnummerid'] ;
+
+try {
+  $sql = "DELETE FROM info 
+  WHERE klantnummerid";
+
+  // use exec() because no results are returned
+  $conn->exec($sql);
+  echo "Gelukt";
+} catch(PDOException $e) {
+  echo $sql . "Mislukt!" . $e->getMessage();
+}
+
+$conn = null;
+?>

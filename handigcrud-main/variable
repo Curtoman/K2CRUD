@@ -1,0 +1,20 @@
+<?php
+
+include '../config/dbconnect.php';
+$nme = $_POST [ 'nme'] ;
+$lnme = $_POST [ 'lnme'] ;
+$klantnummerid = $_POST [ 'klantnummerid'] ;
+
+try {
+
+	$sql = "INSERT INTO info
+	VALUES ('$nme', '$lnme', $klantnummerid)";
+
+	$conn->exec($sql);
+  echo "Reservering toegevoegd";
+} catch(PDOException $e) {
+  echo $sql . "<br>" . $e->getMessage();
+}
+
+$conn = null;
+?>

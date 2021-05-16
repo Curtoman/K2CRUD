@@ -1,0 +1,27 @@
+<?php
+
+include '../config/dbconnect.php';
+$nme = $_POST [ 'nme'] ;
+$lnme = $_POST [ 'lnme'] ;
+$klantnummerid = $_POST [ 'klantnummerid'] ;
+
+try {
+  
+   $sql = "UPDATE info 
+  SET nme='$nme', lnme='$lnme' WHERE klantnummerid=''";
+
+  // Prepare statement
+  $stmt = $conn->prepare($sql);
+
+  // execute the query
+  $stmt->execute();
+
+  // echo a message to say the UPDATE succeeded
+  echo $stmt->rowCount() . "Update is gelukt!";
+
+} catch(PDOException $e) {
+  echo $sql . "Niet gelukt!" . $e->getMessage();
+}
+
+$conn = null;
+?>
